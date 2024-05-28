@@ -1,0 +1,36 @@
+from pyspark.sql import functions as f
+
+def create_select_expr(primary_col1, primary_col2, column1, column2, column3, t_id, t_name, file_type):
+    select_expr = [
+        f.col(primary_col1).alias('Key_1'),
+        f.lit(None).alias('Key_2') if primary_col2 == '' else f.col(primary_col2).alias('Key_2'),
+        f.lit(column1).alias('ColumnName1')
+    ]
+
+    if column2:
+        select_expr.append(f.lit(column2).alias('ColumnName2'))
+    else:
+        select_expr.append(f.lit('InvalidValue').alias('ColumnName2'))
+
+    if column3:
+        select_expr.append(f.lit(column3).alias('ColumnName3'))
+    else:
+        select_expr.append(f.lit('InvalidValue').alias('ColumnName3'))
+
+    select_expr.extend([
+        f.lit('InvalidValue').alias('InvalidValue'),
+        f.lit('InvalidValue1').alias('InvalidValue1'),
+        f.lit('InvalidValue2').alias('InvalidValue2'),
+        f.lit('InvalidValue3').alias('InvalidValue3'),
+        f.lit(t_id).alias('Test_ID'),
+        f.lit(t_name).alias('Test_Case_Name'),
+        f.lit(file_type).alias('File_Type')
+    ])
+    
+    return select_expr
+
+# Usage
+select_expr = create_select_expr(
+    self.primary_col1, self.primary_col2, column1, column2, column3, t_id, t_name, self.file_type
+)
+return res_df.select(*select_expr)
