@@ -34,3 +34,52 @@ select_expr = create_select_expr(
     self.primary_col1, self.primary_col2, column1, column2, column3, t_id, t_name, self.file_type
 )
 return res_df.select(*select_expr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. What is ?
+The  is the UK's statutory deposit insurance and investors compensation scheme for customers of authorized financial services firms. It protects consumers when financial services firms fail, ensuring that customers are compensated if the bank cannot meet its financial obligations. For HSBC, FSCS is a Category One report, critical to our regulatory compliance.
+
+2. Impact on Customers and Balances:
+The  report impacts X customers and Y balances across three entities within . Ensuring the accuracy and reliability of this report is crucial, as it affects our regulatory standing and customer trust.
+
+3. Key Challenges and Regulatory Requirements:
+One of the primary challenges of the  report is the strict data quality checks mandated by the regulators. These checks ensure the integrity and accuracy of the reported data, and non-compliance could lead to severe penalties and reputational damage.
+
+4. Previous Solution:
+Previously, we used a proprietary tool from Deloitte to perform these data quality checks. This tool cost the bank a significant amount (Amount A) annually, was limited in functionality, and incurred additional costs for higher usage.
+
+5. New SSSSS:
+To address these challenges, we developed our ownSSSSS. This tool validates approximately  different test cases, ensuring comprehensive data quality checks. We coded the tool using Spark, which aligns with the bank's broader vision to transition to the cloud.
+
+6. Why Spark?
+Using Spark for  offers several advantages:
+
+Cloud Portability: The Spark code is 100% portable to any cloud platform, ensuring seamless migration when  moves to the cloud.
+Scalability: Spark’s distributed computing capabilities allow for efficient processing of large datasets, essential for the extensive data quality checks required for  reports.
+Cost Efficiency: Developing an in-house solution eliminates the licensing costs associated with the DEDEDDE tool, resulting in substantial savings.
+7. Current Adoption and Future Plans:
+Currently, one entity has fully adopted the SSSSS, and the transition for the second entity is already underway. The third entity is on track to onboard soon. The successful implementation for the first entity has already demonstrated significant improvements in data quality and cost savings.
+
+8. Technical Challenges and Resolutions:
+Developing SSSSS was a highly technical challenge due to the complexity of the data quality checks and the need for robust performance. Key technical hurdles included:
+
+Integration: Ensuring seamless integration with existing data pipelines.
+Optimization: Optimizing Spark code to handle the large volumes of data efficiently.
+Validation: Coding and validating approximately 100 different test cases to meet regulatory standards.
+We overcame these challenges through rigorous testing, optimization, and leveraging Spark’s capabilities for distributed processing. The benefits of this project include:
+
+Cost Savings: Eliminating the annual licensing costs associated with the DDSDSD tool.
+Improved Data Quality: Enhanced accuracy and reliability of FFFFF reports.
+Future-Proofing: Aligning with the bank’s vision for cloud adoption and scalability.
+I believe the SSS project exemplifies innovation and operational excellence, making it a strong candidate for t****. I would be happy to provide any additional information or discuss the project further.
